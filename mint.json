@@ -26,8 +26,8 @@
   ],
   "navigation": [
     {
-      "group": "Documentation",
-      "pages": ["getting-started", "quickstart", "development"]
+      "group": "",
+      "pages": ["getting-started"]
     }
   ],
   "footerSocials": {
