@@ -24,7 +24,20 @@
   "navigation": [
     {
       "group": "",
-      "pages": ["getting-started"]
+      "pages": [
+        "getting started",
+        "using-sip",
+        "editor",
+        "color-dock",
+        "picker",
+        "color-formats",
+        "custom-formats",
+        "smart-formats",
+        "contrast-checker",
+        "shortcuts",
+        "snapshots",
+        "url-schemes"
+      ]
     }
   ],
   "footerSocials": {
