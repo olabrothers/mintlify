@@ -2,10 +2,10 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Sip",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/_images//logo/dark.svg",
+    "light": "/_images//logo/light.svg"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/_images/favicon/favicon_180x180.png",
   "colors": {
     "primary": "#160022",
     "light": "#FFFFFF",
@@ -24,19 +24,14 @@
       "url": "mailto:sip@sipapp.io"
     }
   ],
-
   "navigation": [
     {
       "group": "Documentation",
-      "pages": [
-        "getting-started", 
-        "quickstart", 
-        "development"
-      ]
+      "pages": ["getting-started", "quickstart", "development"]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
+    "twitter": "https://twitter.com/sipapp",
     "github": "https://github.com/olabrothers"
   }
 }
