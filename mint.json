@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Sip",
   "logo": {
-    "dark": "/_images//logo/dark.svg",
-    "light": "/_images//logo/light.svg"
+    "dark": "/_images/logo/dark.svg",
+    "light": "/_images/logo/light.svg"
   },
   "favicon": "/_images/favicon/favicon_180x180.png",
   "colors": {
@@ -12,10 +12,6 @@
     "dark": "#160022",
     "background": {
       "dark": "#160022"
-    },
-    "anchors": {
-      "from": "#160022",
-      "to": "#FFFFFF"
     }
   },
   "topbarLinks": [
