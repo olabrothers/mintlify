@@ -21,13 +21,9 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:sip@sipapp.io"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
   "tabs": [
     {
       "name": "API Reference",
