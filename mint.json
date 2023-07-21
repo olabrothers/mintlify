@@ -7,7 +7,7 @@
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#9563FF",
+    "primary": "#160022",
     "light": "#AE87FF",
     "dark": "#0D001D",
     "background": {
@@ -81,6 +81,7 @@
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/sipapp"
+    "twitter": "https://twitter.com/mintlify",
+    "github": "https://github.com/olabrothers"
   }
 }
