@@ -60,3 +60,105 @@ If you just have modified your file and you want to force syncing, click the **S
 |Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+
+
+<sup>superscript</sup>
+
+<sub>subscript</sub>
+
+**bold**
+
+_italic_
+
+~strikethrough~
+
+<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
+
+
+1. First item
+2. Second item
+3. Third item
+4. Fourth item
+
+- First item
+- Second item
+- Third item
+- Fourth item
+
+- First item
+- Second item
+  - Additional item
+  - Additional item
+- Third item
+
+<Accordion title="I am an Accordion.">
+  You can put any content in here.
+</Accordion>
+
+<Accordion title="I am an Accordion.">
+  You can put any content in here.
+</Accordion>
+
+
+<AccordionGroup>
+  <Accordion title="FAQ without Icon">
+    You can put other components inside Accordions.
+
+    ```java HelloWorld.java
+    class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello, World!");
+        }
+    }
+    ```
+
+  </Accordion>
+
+  <Accordion title="FAQ with Icon" icon="alien-8bit">
+    Check out the [Accordion](/content/components/accordion) docs for all the supported props.
+  </Accordion>
+
+  <Accordion title="FAQ without Icon">
+    Check out the [Accordion](/content/components/accordion) docs for all the supported props.
+  </Accordion>
+</AccordionGroup>
+
+<Card title="Colored Card" icon="lightbulb" iconType="duotone" color="#ca8b04">
+  Here is a card with a duotone yellow icon
+</Card>
+
+<CardGroup cols={2}>
+  <Card title="First Card" icon="square-1" color="#ea5a0c">
+    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+  </Card>
+  <Card title="Second Card" icon="square-2" color="#0285c7">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </Card>
+  <Card title="Third Card" icon="square-3" color="#16a34a">
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  </Card>
+  <Card title="Fourth Card" icon="square-4" color="#dc2626">
+    Excepteur sint occaecat cupidatat non proident
+  </Card>
+</CardGroup>
+
+<Tabs>
+  <Tab title="First Tab">
+    ☝️ Welcome to the content that you can only see inside the first Tab.
+  </Tab>
+  <Tab title="Second Tab">
+    ✌️ Here's content that's only inside the second Tab.
+  </Tab>
+  <Tab title="Third Tab">
+    💪 Here's content that's only inside the third Tab.
+  </Tab>
+</Tabs>
+
+<Note>This adds a note in the content</Note>
+
+<Warning>This raises a warning to watch out for</Warning>
+
+<Info>This draws attention to important information</Info>
+<Tip>This suggests a helpful tip</Tip>
+
+<Check>This brings us a checked status</Check>
