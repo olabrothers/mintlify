@@ -7,18 +7,23 @@
 		"light": "#07C983",
 		"dark": "#15803D"
 	},
-	"favicon": "/favicon.svg",
+	"favicon": "/_images/favicon.svg",
 	"navigation": {
 		"groups": [
 			{
-              "group": "Documentation",
-				"pages": ["getting-started", "introduction", "quickstart", "development"]
+				"group": "Documentation",
+				"pages": [
+					"getting-started",
+					"introduction",
+					"quickstart",
+					"development"
+				]
 			}
 		]
 	},
 	"logo": {
-		"light": "/logo/light.svg",
-		"dark": "/logo/dark.svg"
+		"light": "/_images/light.png",
+		"dark": "/_images/dark.png"
 	},
 	"navbar": {
 		"links": [
