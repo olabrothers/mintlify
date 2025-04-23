@@ -25,7 +25,7 @@
 		{
 			"group": "",
 			"pages": [
-				"/_pages/getting-started",
+				"getting-started",
 				"using-sip",
 				"editor",
 				"color-dock",
