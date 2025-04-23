@@ -36,7 +36,8 @@
         "contrast-checker",
         "shortcuts",
         "snapshots",
-        "url-schemes"
+        "url-schemes",
+        "/_pages/aaa"
       ]
     }
   ],
