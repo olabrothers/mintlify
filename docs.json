@@ -1,7 +1,7 @@
 {
 	"$schema": "https://mintlify.com/docs.json",
 	"theme": "mint",
-	"name": "Mint Starter Kit",
+	"name": "Sip Documentation",
 	"colors": {
 		"primary": "#2563EB",
 		"light": "#60A5FA",
@@ -11,7 +11,7 @@
 	"navigation": {
 		"groups": [
 			{
-				"group": "Documentation",
+				"group": "",
 				"pages": [
 					"getting-started",
 					"introduction",
