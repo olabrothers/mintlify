@@ -11,8 +11,8 @@
 	"navigation": {
 		"groups": [
 			{
-				"group": "Get Started",
-				"pages": ["introduction", "quickstart", "development"]
+				"group": "Documentation",
+				"pages": ["getting-started", "introduction", "quickstart", "development"]
 			}
 		]
 	},
