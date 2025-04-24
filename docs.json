@@ -7,29 +7,18 @@
 		"light": "#07C983",
 		"dark": "#15803D"
 	},
-	"favicon": "/_images/favicon/favicon.svg",
+	"favicon": "/_images/favicon/sip.svg",
 	"navigation": {
 		"groups": [
-					{
-						"group": "Getting Started",
-						"pages": ["introduction", "quickstart", "development"]
-					},
-					{
-						"group": "Essentials",
-						"pages": [
-							"essentials/markdown",
-							"essentials/code",
-							"essentials/images",
-							"essentials/settings",
-							"essentials/navigation",
-							"essentials/reusable-snippets"
-						]
-					}
-				]
+			{
+				"group": "Getting Started",
+				"pages": ["introduction"]
+			}
+		]
 	},
 	"logo": {
-		"light": "/_images/logo/light.svg",
-		"dark": "/_images/logo/dark.svg"
+		"light": "/_images/logo/sip-light.svg",
+		"dark": "/_images/logo/sip-dark.svg"
 	},
 	"navbar": {
 		"links": [
