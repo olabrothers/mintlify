@@ -6,10 +6,12 @@ title: "Using Sip"
 export const Counter = () => {
 	const [count, setCount] = useState(0);
 	return (
-		<div>
-			<button onClick={() => setCount(count - 1)}>-</button>
-			<p>Current count: {count}</p>
-			<button onClick={() => setCount(count + 1)}>+</button>
+		<div className="inline-flex items-center border border-gray-300 rounded-md overflow-hidden text-gray-800">
+			<button onClick={() => setCount(count - 1)}className="px-4 py-2 hover:bg-gray-100">-</button>
+			<p className="px-6 py-2 border-l border-r border-gray-300 text-center font-medium">
+				Current count: {count}
+			</p>
+			<button onClick={() => setCount(count + 1)} className="px-4 py-2 hover:bg-gray-100">+</button>
 		</div>
 	);
 };
