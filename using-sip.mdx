@@ -6,37 +6,35 @@ title: "Using Sip"
 import { useState } from "react";
 
 export const Counter = () => {
-    const [count, setCount] = useState(1);
-    const decrement = () => {
-        if (count > 1) {
-            setCount(count - 1);
-        }
-    };
-    const increment = () => {
-        setCount(count + 1);
-    };
-    const getPrice = (seats) => {
-        if (seats >= 20) return 14.99;
-        if (seats >= 10) return 17.99;
-        if (seats >= 5) return 20.99;
-        if (seats >= 2) return 23.99;
-        return 29.99;
-    };
-    const price = getPrice(count);
-    const renewal = (price * 0.7).toFixed(2);
-    return (
-        <div>
-            <div>
-                <button onClick={decrement} disabled={count <= 1}>-</button>
-                <p>Seats: {count}</p>
-                <button onClick={increment}>+</button>
-            </div>
-            <p>Yearly License Price: ${price.toFixed(2)}</p>
-            <p>Renewal Price: ${renewal} / year</p>
-        </div>
-    );
+	const [count, setCount] = useState(1);
+	const decrement = () => {
+		if (count > 1) {
+			setCount(count - 1);
+		}
+	};
+	const increment = () => {
+		setCount(count + 1);
+	};
+	const getPrice = (seats) => {
+		if (seats >= 20) return 14.99;
+		if (seats >= 10) return 17.99;
+		if (seats >= 5) return 20.99;
+		if (seats >= 2) return 23.99;
+		return 29.99;
+	};
+	const price = getPrice(count);
+	const renewal = (price * 0.7).toFixed(2);
+	return (
+		<div>
+			<div className="flex items-center justify-between space-x-4">
+				<button onClick={decrement} disabled={count <= 1}>-</button>
+				<p>Seats: <b>{count}</b></p>
+				<button onClick={increment}>+</button>
+			</div>
+			<p><b>Price:</b> ${(count * price).toFixed(2)}</p>
+			<p><b>Renewal Price:</b> ${(count * renewal).toFixed(2)} / year</p>
+		</div>
+	);
 };
 
 <Counter />
-
-Hello
