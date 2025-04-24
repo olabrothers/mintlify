@@ -1,39 +1,16 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export const Counter = () => {
-  const [count, setCount] = useState(1);
-
-  const decrement = () => {
-    if (count > 1) setCount(count - 1);
-  };
-
-  const increment = () => {
-    setCount(count + 1);
-  };
-
-  const getPrice = (seats: number) => {
-    if (seats >= 20) return 14.99;
-    if (seats >= 10) return 17.99;
-    if (seats >= 5) return 20.99;
-    if (seats >= 2) return 23.99;
-    return 29.99;
-  };
-
-  const getRenewalPrice = (originalPrice: number) =>
-    parseFloat((originalPrice * 0.7).toFixed(2));
-
-  const yearlyPrice = getPrice(count);
-  const renewalPrice = getRenewalPrice(yearlyPrice);
-
-  return (
-    <div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <button onClick={decrement} disabled={count <= 1} aria-label="Decrease seats">-</button>
-        <p style={{ margin: 0 }}>Seats: {count}</p>
-        <button onClick={increment} aria-label="Increase seats">+</button>
-      </div>
-      <p>Yearly License Price: ${yearlyPrice.toFixed(2)}</p>
-      <p>Renewal Price: ${renewalPrice.toFixed(2)} / year</p>
-    </div>
-  );
+	const [count, setCount] = useState(0);
+	return (
+		<div>
+			<div>
+				<button onClick={() => setCount(count - 1)}>-</button>
+				<p>Seats: {count}</p>
+				<button onClick={() => setCount(count + 1)}>+</button>
+			</div>
+			<p>Yearly License Price: ${count.toFixed(2)}</p>
+			<p>Renewal Price: ${count.toFixed(2)} / year</p>
+		</div>
+	);
 };
