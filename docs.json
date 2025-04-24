@@ -30,21 +30,7 @@
 					}
 				]
 			}
-		],
-		"global": {
-			"anchors": [
-				{
-					"anchor": "Pricing",
-					"href": "https://sipapp.io/pricing",
-					"icon": "link"
-				},
-				{
-					"anchor": "Updates",
-					"href": "https://sipapp.io/updates",
-					"icon": "link"
-				}
-			]
-		}
+		]
 	},
 	"logo": {
 		"light": "/_images/logo/light.svg",
