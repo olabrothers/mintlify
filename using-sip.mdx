@@ -2,3 +2,16 @@
 title: "Using Sip"
 "twitter:image": "/_images/artboard/i.png"
 ---
+
+export const Counter = () => {
+	const [count, setCount] = useState(0);
+	return (
+		<div>
+			<button onClick={() => setCount(count - 1)}>-</button>
+			<p>Current count: {count}</p>
+			<button onClick={() => setCount(count + 1)}>+</button>
+		</div>
+	);
+};
+
+<Counter />
