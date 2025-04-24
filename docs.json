@@ -12,7 +12,15 @@
 		"groups": [
 			{
 				"group": "Getting Started",
-				"pages": ["introduction", "callout-boxes"]
+				"pages": [
+					"introduction",
+					"using-sip",
+					"editor",
+					"palettes",
+					"color-dock",
+					"picker",
+					"callout-boxes"
+				]
 			}
 		]
 	},
