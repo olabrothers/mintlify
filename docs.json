@@ -17,8 +17,8 @@
 		]
 	},
 	"logo": {
-		"light": "/_images/logo/sip-light.svg",
-		"dark": "/_images/logo/sip-dark.svg"
+		"light": "/_images/logos/sip-light.svg",
+		"dark": "/_images/logos/sip-dark.svg"
 	},
 	"navbar": {
 		"links": [
