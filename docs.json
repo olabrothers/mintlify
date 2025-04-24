@@ -3,8 +3,8 @@
 	"theme": "mint",
 	"name": "Sip",
 	"colors": {
-		"primary": "#D0AD42",
-		"light": "#13A6EA",
+		"primary": "#13A6EA",
+		"light": "#D0AD42",
 		"dark": "#11A5E9"
 	},
 	"favicon": "/_images/favicon/sip.svg",
