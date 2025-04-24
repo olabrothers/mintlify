@@ -3,6 +3,20 @@ title: "Getting Started"
 "twitter:image": "/_images/artboard/i.png"
 ---
 
+export const Counter = () => {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <p>Current count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>
+        +
+      </button>
+    </div>
+  );
+}
+
+<Counter />
+
 Sip is a design tool that allows you to collect, organize and edit colors. It also gives you the ability to share colors with everyone and link them between the other tools in your workflow.
 
 Designed to be used quickly, to be as present and invisible as possible. It's meant to be there every-time you need it and to go away before you know it.
