@@ -3,9 +3,9 @@
 	"theme": "mint",
 	"name": "Sip",
 	"colors": {
-		"primary": "#FF0000",
-		"light": "#0000FF",
-		"dark": "#00FF00"
+		"primary": "#11A5E9",
+		"light": "#07C983",
+		"dark": "#15803D"
 	},
 	"favicon": "/_images/favicon/sip.svg",
 	"navigation": {
