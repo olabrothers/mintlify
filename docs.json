@@ -9,10 +9,7 @@
 	},
 	"favicon": "/_images/favicon/favicon.svg",
 	"navigation": {
-		"tabs": [
-			{
-				"tab": "Documentation",
-				"groups": [
+		"groups": [
 					{
 						"group": "Getting Started",
 						"pages": ["introduction", "quickstart", "development"]
@@ -29,8 +26,6 @@
 						]
 					}
 				]
-			}
-		]
 	},
 	"logo": {
 		"light": "/_images/logo/light.svg",
