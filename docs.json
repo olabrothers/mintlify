@@ -11,9 +11,9 @@
 	"navigation": {
 		"groups": [
 			{
-				"group": "Getting Started",
+				"group": "Documentation",
 				"pages": [
-					"introduction",
+					"getting-started",
 					"using-sip",
 					"picker",
 					"editor",
