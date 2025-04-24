@@ -1,6 +1,6 @@
 ---
 title: "Using Sip"
-"twitter:image": "/_images/artboard/i.png"
+twitter:image: "/_images/artboard/i.png"
 ---
 
 import { useState } from 'react';
@@ -19,15 +19,18 @@ export const Counter = () => {
     };
 
     const getPrice = (seats: number) => {
-    	if (seats >= 20) return 14.99;
-    	if (seats >= 10) return 17.99;
-    	if (seats >= 5) return 20.99;
-    	if (seats >= 2) return 23.99;
+    	if (seats >= 20)
+            return 14.99;
+    	if (seats >= 10)
+        return 17.99;
+    	if (seats >= 5)
+        return 20.99;
+    	if (seats >= 2)
+         return 23.99;
     	return 29.99;
     };
 
     const getRenewalPrice = (originalPrice: number) => (parseFloat((originalPrice * 0.7).toFixed(2)));
-
     const yearlyPrice = getPrice(count);
     const renewalPrice = getRenewalPrice(yearlyPrice);
 
@@ -44,4 +47,5 @@ export const Counter = () => {
     );
 
 };
+
 <Counter />
