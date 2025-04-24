@@ -6,23 +6,23 @@ twitter:image: "/_images/artboard/i.png"
 import { useState } from "react";
 
 export const Counter = () => {
-	const [count, setCount] = useState(0);
-    const decrement = () => {
+	const [count, setCount] = useState(1); // start with 1 seat
+	const decrement = () => {
 		if (count > 1) {
 			setCount(count - 1);
 		}
 	};
-    const increment = () => {
+	const increment = () => {
 		setCount(count + 1);
 	};
-    const getPrice = (seats: number) => {
+	const getPrice = (seats: number): number => {
 		if (seats >= 20) return 14.99;
 		if (seats >= 10) return 17.99;
 		if (seats >= 5) return 20.99;
 		if (seats >= 2) return 23.99;
 		return 29.99;
 	};
-    const price = getPrice(count);
+	const price = getPrice(count);
 	const renewal = (price * 0.7).toFixed(2);
 	return (
 		<div>
@@ -36,6 +36,5 @@ export const Counter = () => {
 		</div>
 	);
 };
-
 
 <Counter />
