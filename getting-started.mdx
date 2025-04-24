@@ -3,14 +3,63 @@ title: "Getting Started"
 "twitter:image": "/_images/artboard/i.png"
 ---
 
-export const Counter = () => {
-  const [count, setCount] = useState(0);
+import React, { useState, useMemo } from 'react';
+
+function getPricePerDevice(devices, isRenewal = false) {
+  const tiers = isRenewal
+    ? [
+        { max: 1, price: 20.99 },
+        { max: 4, price: 16.79 },
+        { max: 9, price: 14.69 },
+        { max: 19, price: 12.59 },
+        { max: Infinity, price: 10.49 },
+      ]
+    : [
+        { max: 1, price: 29.99 },
+        { max: 4, price: 23.99 },
+        { max: 9, price: 20.99 },
+        { max: 19, price: 17.99 },
+        { max: Infinity, price: 14.99 },
+      ];
+
+  return tiers.find(t => devices <= t.max).price;
+}
+
+export default function LicenseCalculator() {
+  const [devices, setDevices] = useState(1);
+  const [isRenewal, setIsRenewal] = useState(false);
+
+  const pricePerDevice = useMemo(() => getPricePerDevice(devices, isRenewal), [devices, isRenewal]);
+  const total = useMemo(() => (devices * pricePerDevice).toFixed(2), [devices, pricePerDevice]);
+
   return (
-    <div>
-      <p>Current count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>
-        +
-      </button>
+    <div className="p-4 rounded-xl shadow-md bg-white w-full max-w-md mx-auto">
+      <h2 className="text-xl font-bold mb-4">License Cost Calculator</h2>
+
+      <label className="block mb-2 font-medium">
+        Number of Devices:
+        <input
+          type="number"
+          value={devices}
+          min="1"
+          className="mt-1 p-2 border rounded w-full"
+          onChange={e => setDevices(Math.max(1, parseInt(e.target.value)))}
+        />
+      </label>
+
+      <label className="flex items-center space-x-2 my-4">
+        <input
+          type="checkbox"
+          checked={isRenewal}
+          onChange={e => setIsRenewal(e.target.checked)}
+        />
+        <span>Renewal License</span>
+      </label>
+
+      <div className="mt-4">
+        <p>Price per Device: <strong>${pricePerDevice.toFixed(2)}</strong></p>
+        <p>Total: <strong>${total}</strong></p>
+      </div>
     </div>
   );
 }
