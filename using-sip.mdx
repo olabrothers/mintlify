@@ -25,14 +25,25 @@ export const Counter = () => {
 	const price = getPrice(count);
 	const renewal = (price * 0.7).toFixed(2);
 	return (
-		<div  className="p-4 border rounded-xl">
+		<div
+			className="p-4 rounded-xl w-full max-w-sm"
+			style={{ border: "1px solid rgba(0, 0, 0, 0.5)" }}
+		>
 			<div className="flex items-center justify-between space-x-4">
-				<button onClick={decrement} disabled={count <= 1}>-</button>
-				<p>Seats: <b>{count}</b></p>
+				<button onClick={decrement} disabled={count <= 1}>
+					-
+				</button>
+				<p>
+					Seats: <b>{count}</b>
+				</p>
 				<button onClick={increment}>+</button>
 			</div>
-			<p><b>Price:</b> ${(count * price).toFixed(2)}</p>
-			<p><b>Renewal Price:</b> ${(count * renewal).toFixed(2)} / year</p>
+			<p>
+				<b>Price:</b> ${(count * price).toFixed(2)}
+			</p>
+			<p>
+				<b>Renewal Price:</b> ${(count * renewal).toFixed(2)} / year
+			</p>
 		</div>
 	);
 };
