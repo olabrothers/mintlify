@@ -35,11 +35,13 @@
 			"anchors": [
 				{
 					"anchor": "Pricing",
-					"href": "https://sipapp.io/pricing"
+					"href": "https://sipapp.io/pricing",
+					"icon": "external-link"
 				},
 				{
 					"anchor": "Updates",
-					"href": "https://sipapp.io/updates"
+					"href": "https://sipapp.io/updates",
+					"icon": "external-link"
 				}
 			]
 		}
