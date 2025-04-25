@@ -7,7 +7,7 @@
 		"light": "#016ADF",
 		"dark": "#016ADF"
 	},
-	"favicon": "/_images/favicon/sip.svg",
+	"favicon": "/_images/favicon/sip.png",
 	"navigation": {
 		"groups": [
 			{
@@ -33,8 +33,8 @@
 		]
 	},
 	"logo": {
-		"light": "/_images/logos/sip-light.svg",
-		"dark": "/_images/logos/sip-dark.svg"
+		"light": "/_images/logos/sip-light.png",
+		"dark": "/_images/logos/sip-dark.png"
 	},
 	"navbar": {
 		"links": [
