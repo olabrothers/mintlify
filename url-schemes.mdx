@@ -3,13 +3,15 @@ title: "URL Schemes"
 "twitter:image": "/_images/artboard/i.png"
 ---
 
-Using the `sip://` custom URL Scheme, you can communicate with the Sip app and perform various actions.
+Using the `sip://` custom URL scheme, you can interact with the Sip app and trigger specific actions.
 
 ## **License**
 
-You can activate your License using: `sip://license/{{SERIAL_NUMBER}}`, this will open the Activation Window and will fill the field with the `{{SERIAL_NUMBER}}`.
+To activate your license, use the following format: `sip://license/{{SERIAL_NUMBER}}`.
 
-<Tip>**Example:** `sip://license/SP2-000-000-AAA-BBB-CCC`</Tip>
+This will launch the Activation Window and automatically populate the license field with your `{{SERIAL_NUMBER}}`.
+
+<Tip>**Example:** `sip://license/SIP-000-000-AAA-BBB-CCC`</Tip>
 
 <img
 	className="block dark:hidden"
@@ -24,7 +26,7 @@ You can activate your License using: `sip://license/{{SERIAL_NUMBER}}`, this wil
 
 ## **Picker**
 
-You can launch Sip Picker using `sip://picker`
+You can launch the Sip Picker using: `sip://picker`.
 
 <Tip>**Example:** `sip://picker`</Tip>
 
@@ -43,6 +45,10 @@ You can launch Sip Picker using `sip://picker`
 
 You can launch Contrast Checker using `sip://contrast`, optionally it's possible to pass 2 colors as arguments, in hex or rgba format.
 
+You can launch the Contrast Checker using: `sip://contrast`.
+
+Optionally, you can pass two colors as arguments, either in `hex` or `rgba` format.
+
 <Tip>**Example 1:** `sip://contrast`</Tip>
 <Tip>**Example 2:** `sip://contrast/hex/#F0F5F5,#EC1052`</Tip>
 <Tip>**Example 3:** `sip://contrast/rgba/251-86-72-1.00,43-43-43-1.00`</Tip>
@@ -60,7 +66,9 @@ You can launch Contrast Checker using `sip://contrast`, optionally it's possible
 
 ## **Settings**
 
-You can launch Settings using `sip://settings`, optionally it's possible to pass the tab that you want to open, must be one of this values: `general`, `appearance`, `shortcuts`, `shortcuts`, `dock`, `snapshots`, `cloud`, `about`.
+You can launch the Settings window using: `sip://settings`.
+
+Optionally, you can specify a tab to open directly. Valid values include: `general`, `appearance`, `shortcuts`, `shortcuts`, `dock`, `snapshots`, `cloud` and `about`.
 
 <Tip>**Example 1:** `sip://settings`</Tip>
 <Tip>**Example 2:** `sip://settings/formats`</Tip>
@@ -78,7 +86,11 @@ You can launch Settings using `sip://settings`, optionally it's possible to pass
 
 ## **Color**
 
-Using this URL Scheme it's possible to add a color to your history, you need to set the format (`hex` or `rgba`), then the color name, then the color in the right format.
+You can add a color to your history using this format: `sip://color/{format}/{color_name}/{color_value}`
+
+- `{format}` must be `hex` or `rgba`
+- `{color_name}` is the name of the color you'd like to save
+- `{color_value}` must be in the correct format for the type
 
 <Tip>**Example 1:** `sip://color/hex/My Sin/#FAAA43`</Tip>
 <Tip>**Example 2:** `sip://color/rgba/Sunset Orange/250-81-66-1.00`</Tip>
@@ -96,13 +108,15 @@ Using this URL Scheme it's possible to add a color to your history, you need to 
 
 ## **Palette**
 
-Using this URL Scheme it's possible to add a palette, you need to set the format (`hex` or `rgba`), then the palete name, then a list of colors comma separated. each color must be valid.
+You can add a palette using this format: `sip://palette/{format}/{palette_name}/{color_list}`
+
+- `{format}` must be `hex` or `rgba`
+- `{palette_name}` is the name of the palette
+- `{color_list}` is a comma-separated list of color entries in the format `{color_name}-{color_value}`
+  - Each color value must match the selected format (`hex` or `rgba`)
 
 <Tip>**Example 1:** `sip://palette/rgba/Dark Palette/MineShaft-50-50-51-1.00,Nero-37-37-38-1.00`</Tip>
 <Tip>**Example 2:** `sip://palette/hex/Big Sur/Tomato-#FE6147,My Sin-#FBAC42,Green Blue-#1074B5`</Tip>
-
-
-<Tip>[here](sip://palette/rgba/Dark Palette/MineShaft-50-50-51-1.00,Nero-37-37-38-1.00)</Tip>
 
 <img
 	className="block dark:hidden"
