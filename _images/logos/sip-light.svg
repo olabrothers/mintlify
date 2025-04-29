@@ -1,0 +1,11 @@
+<svg width="456" height="456" viewBox="0 0 456 456" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2010_16220" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="456" height="456">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M114 0C51.0395 0 0 51.0395 0 114V228C0 353.921 102.079 456 228 456C353.921 456 456 353.921 456 228C456 102.079 353.921 0 228 0H114ZM114 68.4C88.8158 68.4 68.4 88.8158 68.4 114C68.4 139.184 88.8158 159.6 114 159.6C139.184 159.6 159.6 139.184 159.6 114C159.6 88.8158 139.184 68.4 114 68.4Z" fill="#D9D9D9" style="fill:#D9D9D9;fill:color(display-p3 0.8510 0.8510 0.8510);fill-opacity:1;"/>
+</mask>
+<g mask="url(#mask0_2010_16220)">
+<path d="M228 228H456V456H228V228Z" fill="#00B2FF" style="fill:#00B2FF;fill:color(display-p3 0.0000 0.7000 1.0000);fill-opacity:1;"/>
+<path d="M0 228H228V456H0V228Z" fill="#007BFF" style="fill:#007BFF;fill:color(display-p3 0.0000 0.4833 1.0000);fill-opacity:1;"/>
+<path d="M228 0H456V228H228V0Z" fill="#007BFF" style="fill:#007BFF;fill:color(display-p3 0.0000 0.4833 1.0000);fill-opacity:1;"/>
+<path d="M0 0H228V228H0V0Z" fill="#1447FD" style="fill:#1447FD;fill:color(display-p3 0.0785 0.2794 0.9917);fill-opacity:1;"/>
+</g>
+</svg>
