@@ -1,0 +1,96 @@
+---
+title: "Custom Formats"
+"twitter:image": "/_images/artboard/artboard.png"
+---
+
+Custom Formats give you the power to create any color format you need—tailored to your design workflow. Whether you're starting from scratch or building on an existing format, the flexibility is yours.
+
+With **Custom Formats**, you can:
+
+- Define how colors are copied to your clipboard
+- Customize how colors are shown in menus
+- Personalize how colors appear in the picker
+
+All within a single, intuitive interface.
+
+## Accessing Custom Formats
+
+You can access the **Custom Formats** interface in two ways:
+
+- **From the Add Menu**: Click the `+` button in the toolbar.
+- **From the Menu**: Click the **Add** button (with the list icon) in the top toolbar.
+
+<Tip>
+	<b>Example:</b> Click the `+` in the top left or the dropdown in the toolbar
+</Tip>
+
+### Custom Formats in the Toolbar
+
+<img
+	className="block dark:hidden rounded-lg"
+	src="/_images/pages/custom-formats/custom-formats-menu-light@2x.png"
+	alt="custom-formats-menu"
+/>
+<img
+	className="hidden dark:block rounded-lg"
+	src="/_images/pages/custom-formats/custom-formats-menu-dark@2x.png"
+	alt="custom-formats-menu"
+/>
+
+This image shows how to access **Custom Format** from the **Add Menu** in the toolbar.
+
+## Creating a New Custom Format
+
+When you create a new format, you’ll see the **Editor View**. This is where you define your format’s structure.
+
+<img
+	className="block dark:hidden rounded-lg"
+	src="/_images/pages/custom-formats/custom-formats-add-light@2x.png"
+	alt="custom-formats-add"
+/>
+<img
+	className="hidden dark:block rounded-lg"
+	src="/_images/pages/custom-formats/custom-formats-add-dark@2x.png"
+	alt="custom-formats-add"
+/>
+
+The editor includes:
+
+- **Format Name**: Give your format a meaningful name.
+- **Start With**: Choose to create from scratch or based on an existing format.
+- **Help Menu**: Access predefined functions and properties for your format.
+- **Code Formatter**: Organize and indent your code with a click.
+
+## Defining Custom Formats
+
+Custom Formats are structured into three sections:
+
+- **Clipboard**: Defines how the color is copied to your clipboard.
+- **Menu**: Defines how the color is shown in Sip’s menu.
+- **Picker**: Defines how the color appears in the picker interface.
+
+<img
+	className="block dark:hidden rounded-lg"
+	src="/_images/pages/custom-formats/custom-formats-edit-light@2x.png"
+	alt="custom-formats-edit"
+/>
+<img
+	className="hidden dark:block rounded-lg"
+	src="/_images/pages/custom-formats/custom-formats-edit-dark@2x.png"
+	alt="custom-formats-edit"
+/>
+
+Use the code editor to define these formats. For example:
+
+```json
+{
+	"function": "lower",
+	"x": "#hex[red]hex[green]hex[blue]"
+}
+```
+
+<Tip>
+	{" "}
+	<b>Tip:</b> Share your formats by exporting them—others can import them into their
+	own Sip workspace.{" "}
+</Tip>

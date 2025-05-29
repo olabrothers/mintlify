@@ -1,0 +1,57 @@
+---
+title: "Smart Profiles"
+"twitter:image": "/_images/artboard/artboard.png"
+---
+
+**Smart Profiles** — Context-Aware Color Picking
+
+With **Smart Profiles**, Sip automatically adapts to the environment you're working in by applying the correct color profile behind the scenes.
+
+## Why Smart Profiles Matter
+
+When picking a color on your screen, the result can vary depending on the color profile of the app or window you're sampling from:
+
+- Web browsers like **Safari** and **Chrome** often use **sRGB IEC61966-2.1**.
+- Native macOS apps like **Xcode** and **Sketch** may use **Display P3** or **Generic RGB**.
+
+Without the correct profile, your picked colors may not match what you see in your designs. **Smart Profiles** solves this by ensuring:
+
+- The correct color profile is applied automatically.
+- Your colors are accurate and consistent across apps.
+- You save time by letting Sip handle the technical details.
+
+## Setting Up Smart Profiles
+
+1. Go to **Preferences > Smart Profiles**.
+2. Enable **Use Smart Profiles**.
+3. Add apps (e.g., Safari, Chrome, Xcode) using the **+** button.
+4. Choose the appropriate color profile for each app from the dropdown.
+
+That's it! Sip will now automatically switch profiles based on where you're picking colors from.
+
+<img
+	className="block dark:hidden rounded-lg"
+	src="/_images/pages/smart-profiles/smart-profiles-light@2x.png"
+	alt="smart-profiles"
+/>
+<img
+	className="hidden dark:block rounded-lg"
+	src="/_images/pages/smart-profiles/smart-profiles-dark@2x.png"
+	alt="smart-profiles"
+/>
+
+## Managing Smart Profiles
+
+- **Enable or disable** Smart Profiles with the checkbox.
+- **Add or remove** apps as needed.
+- Select the desired profile for each app using the dropdown.
+- Click the trash icon to remove an app from the list.
+
+<Tip>
+	<b>Example:</b> Assign <b>sRGB IEC61966-2.1</b> to web browsers like Safari
+	and Chrome, and <b>Display P3</b> to Xcode for more accurate color picking.
+</Tip>
+
+## Resetting Smart Profiles
+
+If you need a fresh start, click **Reset Smart Profiles** at the bottom of the panel.

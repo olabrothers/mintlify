@@ -1,0 +1,186 @@
+---
+title: "URL Schemes"
+"twitter:image": "/_images/artboard/artboard.png"
+---
+
+Using the `sip://` custom URL scheme, you can interact with the Sip app and trigger specific actions.
+
+The URL schemes allow you to:
+
+- Activate license
+- Open Picker
+- Open Contrast Checker
+- Open Settings
+- Add Colors
+- Add Palettes
+
+This enables deeper integration with your workflow.
+
+## License
+
+To activate your license, use the following format:
+
+```
+sip://license/{{SERIAL_NUMBER}}
+```
+
+This will launch the Activation Window and automatically populate the license field with your `{{SERIAL_NUMBER}}`.
+
+<Tip>
+	<b>Example:</b> `sip://license/SIP-000-000-AAA-BBB-CCC`
+</Tip>
+
+<img
+	className="block dark:hidden"
+	src="/_images/pages/url-schemes/license-light@2x.png"
+	alt="license"
+/>
+<img
+	className="hidden dark:block"
+	src="/_images/pages/url-schemes/license-dark@2x.png"
+	alt="license"
+/>
+
+## Picker
+
+Launch the Sip Picker instantly with:
+
+```
+sip://picker
+```
+
+<Tip>
+	<b>Example:</b> `sip://picker`
+</Tip>
+
+<img
+	className="block dark:hidden"
+	src="/_images/pages/url-schemes/picker-light@2x.png"
+	alt="picker"
+/>
+<img
+	className="hidden dark:block"
+	src="/_images/pages/url-schemes/picker-dark@2x.png"
+	alt="picker"
+/>
+
+## Contrast Checker
+
+Launch the Contrast Checker using:
+
+```
+sip://contrast
+```
+
+You can also pass two colors (in `hex` or `rgba` format) to compare:
+
+<Tip>
+	<b>Example:</b> `sip://contrast`
+</Tip>
+<Tip>
+	<b>Example:</b> `sip://contrast/hex/#D95068,#FAF9E7`
+</Tip>
+<Tip>
+	<b>Example:</b> `sip://contrast/rgba/217-80-104-1.00,250-249-231-1.00`
+</Tip>
+
+<img
+	className="block dark:hidden"
+	src="/_images/pages/url-schemes/contrast-checker-light@2x.png"
+	alt="contrast-checker"
+/>
+<img
+	className="hidden dark:block"
+	src="/_images/pages/url-schemes/contrast-checker-dark@2x.png"
+	alt="contrast-checker"
+/>
+
+## Settings
+
+Open the Settings window using:
+
+```
+sip://settings
+```
+
+Optionally, specify a tab to open directly. Valid values: `general`, `appearance`, `shortcuts`, `dock`, `snapshots`, `cloud`, and `about`.
+
+<Tip>
+	<b>Example:</b> `sip://settings`
+</Tip>
+<Tip>
+	<b>Example:</b> `sip://settings/formats`
+</Tip>
+
+<img
+	className="block dark:hidden"
+	src="/_images/pages/url-schemes/settings-light@2x.png"
+	alt="settings"
+/>
+<img
+	className="hidden dark:block"
+	src="/_images/pages/url-schemes/settings-dark@2x.png"
+	alt="settings"
+/>
+
+## Color
+
+Add a color to your history using:
+
+```
+sip://color/{format}/{color_name}/{color_value}
+```
+
+- `{format}`: `hex` or `rgba`
+- `{color_name}`: The name of the color
+- `{color_value}`: Must match the selected format
+
+<Tip>
+	<b>Example:</b> `sip://color/hex/My Sin/#FAAA43`
+</Tip>
+<Tip>
+	<b>Example:</b> `sip://color/rgba/Sunset Orange/250-81-66-1.00`
+</Tip>
+
+<img
+	className="block dark:hidden"
+	src="/_images/pages/url-schemes/color-light@2x.png"
+	alt="color"
+/>
+<img
+	className="hidden dark:block"
+	src="/_images/pages/url-schemes/color-dark@2x.png"
+	alt="color"
+/>
+
+## Palette
+
+Add a palette using:
+
+```
+sip://palette/{format}/{palette_name}/{color_list}
+```
+
+- `{format}`: `hex` or `rgba`
+- `{palette_name}`: The name of the palette
+- `{color_list}`: Comma-separated list of `{color_name}-{color_value}` entries. Each value must match the format.
+
+<Tip>
+	<b>Example:</b> `sip://palette/rgba/Dark
+	Palette/MineShaft-50-50-51-1.00,Nero-37-37-38-1.00`
+</Tip>
+<Tip>
+	<b>Example:</b> `sip://palette/hex/Big Sur/Tomato-#FE6147,My Sin-#FBAC42,Green
+	Blue-#1074B5`
+</Tip>
+
+<img
+	className="block dark:hidden"
+	src="/_images/pages/url-schemes/palette-light@2x.png"
+	alt="palette"
+/>
+<img
+	className="hidden dark:block"
+	src="/_images/pages/url-schemes/palette-dark@2x.png"
+	alt="palette"
+/>
