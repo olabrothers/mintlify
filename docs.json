@@ -12,23 +12,7 @@
 		"groups": [
 			{
 				"group": "Documentation",
-				"pages": [
-					"getting-started",
-					"using-sip",
-					"picker",
-					"editor",
-					"palettes",
-					"color-dock",
-					"color-formats",
-					"color-blindness",
-					"custom-formats",
-					"contrast-checker",
-					"shortcuts",
-					"snapshots",
-					"smart-formats",
-					"smart-profiles",
-					"url-schemes"
-				]
+				"pages": ["getting-started", "using-sip", "picker", "editor", "palettes", "color-dock", "color-formats", "color-blindness", "custom-formats", "contrast-checker", "shortcuts", "snapshots", "smart-formats", "smart-profiles", "url-schemes"]
 			}
 		]
 	},
