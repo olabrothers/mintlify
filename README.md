@@ -1,18 +1,19 @@
-# 📖 Sip Documentation
+# Sip Documentation
 
-Welcome to the official documentation for **Sip** — the ultimate color tool for designers and developers. This guide will help you navigate all features and tools available in Sip.
+Welcome to the official documentation for **Sip**, a color tool for designers and developers. This guide will help you navigate the features and tools available in Sip.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 - [Getting Started](getting-started)
+- [What's New in Sip 5.0](whats-new)
 
 Start here to learn how to install and set up Sip.
 
 ---
 
-## 🎨 Features
+## Features
 
 Explore the powerful features of Sip to streamline your color workflows:
 
@@ -22,35 +23,34 @@ Explore the powerful features of Sip to streamline your color workflows:
 - [Palettes](palettes)
 - [Color Dock](color-dock)
 - [Color Formats](color-formats)
+- [Smart Formats](smart-formats)
+- [Smart Profiles](smart-profiles)
 - [Color Blindness](color-blindness)
-- [Custom Formats](custom-formats)
 - [Contrast Checker](contrast-checker)
 - [Shortcuts](shortcuts)
 - [Snapshots](snapshots)
-- [Smart Formats](smart-formats)
-- [Smart Profiles](smart-profiles)
 - [URL Schemes](url-schemes)
 
 ---
 
-## 🌈 Theme and Branding
+## Theme and Branding
 
 - **Primary Color:** `#016ADF`
-- **Favicon:** `/favicon.svg`
+- **Favicon:** `/_images/favicon/favicon.svg`
 - **Logos:**
-  - Light Mode: `/logos/sip-light.svg`
-  - Dark Mode: `/logos/sip-dark.svg`
+  - Light Mode: `/_images/logos/sip-light.svg`
+  - Dark Mode: `/_images/logos/sip-dark.svg`
 
 ---
 
-## 🌐 Links
+## Links
 
 - [Pricing](https://sipapp.io/pricing)
 - [Contact Us](mailto:sip@sipapp.io)
 
 ---
 
-## 🔗 Social Links
+## Social Links
 
 Stay connected and follow us:
 
